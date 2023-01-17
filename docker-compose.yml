@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  curdwithmongodb:
+    image: ${DOCKER_REGISTRY-}curdwithmongodb
+    build:
+      context: .
+      dockerfile: CurdWithMongoDb\Dockerfile
